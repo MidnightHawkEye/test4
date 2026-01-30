@@ -2,10 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TestPage</title>
+    <title>Club Entrance Check</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    <h1>TestPage</h1>
+
+    <h1>🎉 Club Entrance 🎉</h1>
+
+    <div>
+        <input type="text" id="name" placeholder="Your name">
+        <br>
+        <input type="number" id="age" placeholder="Your age">
+        <br>
+        <button onclick="checkAge()">Check Entry</button>
+    </div>
+
+    <div id="cashSection" style="display:none;">
+        <br>
+        <input type="number" id="cash" placeholder="Cash in CHF">
+        <br>
+        <button onclick="checkCash()">Check Cash</button>
+    </div>
+
+    <div id="output"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
